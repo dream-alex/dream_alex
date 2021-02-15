@@ -1,0 +1,77 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+alert("Привет! Давай решим загадки?");
+
+	var maxTryCount = 3;
+	var correctAnswer = 0;
+
+//загадка №1
+	var quest1 = prompt("Первая загадка: Два конца. Два кольца. По середине - гвоздик. Что это?");
+
+	for (var tryCount = 1; tryCount <= maxTryCount; tryCount++) {
+			if (quest1 == "ножницы" || quest1 == "Ножницы") {
+				alert("Браво! Отличное начало!");
+				correctAnswer++;
+				break;
+			}
+			else {
+				 alert("Попробуй ещё раз!");
+			}
+
+		if (tryCount==maxTryCount) {
+			alert("Увы :( Эту загадку Вы не отгадали... Переходим к следующей!");
+			break;
+			}
+			quest1 = prompt("Попробуйте ещё раз. У Вас осталось " + (maxTryCount-tryCount) + " попыток."); 
+		}
+			alert("Правильный ответ Ножницы.");
+
+//загадка №2
+	var quest2 = prompt("Вторая загадка: Зимой и летом одним цветом?");
+
+	for (var tryCount = 1; tryCount <= maxTryCount; tryCount++) {
+			if (quest2 == "ель" || quest2 == "Ель" || quest2 == "ёлка" || quest2 == "Ёлка" || quest2 == "елка" || quest2 == "Елка" || quest2 == "ёлочка" || quest2 == "Ёлочка") {
+				alert("Молодец! Продолжай в том же духе!");
+				correctAnswer++;
+				break;
+			}
+			 else {
+			 	alert("У тебя получится! Вспоминай! ;)");
+			}
+		if (tryCount==maxTryCount) {
+				alert("Увы :( Эту загадку Вы не отгадали... Переходим к следующей!");
+				break;
+				}
+				quest2 = prompt("Попробуйте ещё раз. У Вас осталось " + (maxTryCount-tryCount) + " попыток."); 
+			}
+				alert("Правильный ответ Ёлочка.");
+	
+//загадка №3
+	var quest3 = prompt("Третья загадка: Сидит дед, во сто шуб одет. Кто его раздевает, тот слёзы проливает. Кто же это?");
+
+	for (var tryCount = 1; tryCount <= maxTryCount; tryCount++) {
+
+			if (quest3 == "лук" || quest3 == "Лук") {
+				alert("И эта загадка тебе легко далась!");
+				correctAnswer++
+				break;
+		}
+			 else {
+			 	alert("Я всё ещё верю в тебя! ;*");
+		}
+		if (tryCount==maxTryCount) {
+				alert("Увы :( Эту загадку Вы не отгадали... Подводим итоги!");
+				break;
+				}
+				quest3 = prompt("Попробуйте ещё раз. У Вас осталось " + (maxTryCount-tryCount) + " попыток."); 
+			}
+				alert("Правильный ответ Лук.");
+
+alert("Ну, что? Подводим ИТОГИ? ;)");
+
+alert("Ты выполнил правильно " + correctAnswer + " заданий!");
+
+alert("На этом игра окончена! До новых встреч! :)");
+
+</script>
